@@ -3,11 +3,12 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<title>Being Zen - Every Day Mindfulness and Zen Habits</title>
 </head>
 <body>
 	<header>
-		<img src="../images/being_zen_logo.png">
+		<a href="index.html"><img src="../images/being_zen_logo_crop.png"></a>
 					<nav>
 						<ul>
 							<li><a href="products.html">Products</a></li>
@@ -18,32 +19,75 @@
 					</nav>	
 	</header>
 
-	<hero>
-		
+	<!-- HERO SECTION -->
 
-			<div class="fullscreen-bg">
-    			<video loop muted autoplay>
-        		<source src="../video/Meditation.mp4" type="video/mp4">
-    			</video>
-			</div>		
-		<form class="cta">
-			<input type="text" placeholder="Sign Up Now">
-			<input type="submit" value="Submit" id="submit-btn">
-		</form>	
-	</hero>
+	<div class="hero clearfix">
+				
+				
+		<script type="text/javascript">var submitted=false;</script>
+
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+	onload="if(submitted) {window.location='thank-you.html';}"></iframe>
+	  <!--    <form action="YOUR-EMBEDDED-GOOGLE-SPREADSHEET-LINK" method="post" > -->
 
 
-	<main>
-		<article class="post">
-			<H2>This Is Post One</H2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</article>
+		<form id="cta" action="#" method="post" name="sign up for eamil list" target="hidden_iframe" 
+onsubmit="submitted=true;">
+	      		<div class="cta_header">
+	        		 <p>Sign Up For Our Newsletter</p>
+	      		</div>
+	      		<div class="cta_description">
+	        		<p>Receive Fresh Tips Once in a While</p>
+	      		</div>
+	      		<div class="input">
+	        		<input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+	        		<input type="submit" class="button" id="submit" value="Stay Updated">
+	      		</div>
+    	</form>
 
+    		<!-- <iframe src=".cta" id="no-target" name="no-target" style="visibility:hidden"></iframe> -->
+
+				<div class="fullscreen-bg">
+    				<video loop muted autoplay>
+        				<source src="../video/PumpkinCandle.mp4" type="video/mp4">
+    				</video>
+				</div>	
+
+	</div>
+
+	<!-- END HERO SECTION -->
+
+
+	<main class="clearfix">
+		<div id="post1">
+			<article class="post">
+				<H2>This Is Post One</H2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+				<p class="show_more">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+					
+					<div id="learn_more_button">	
+						<button id="learn_more">
+							Read More
+						</button>
+					</div>
+
+					
+		</div>
+			</article>
+
+	<div id="post2"	
 		<article class="post">
 			<h2>This Is Post Two</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -53,27 +97,36 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</article>
-
-		<article class="post">
-			<H2>This Is Post Three</H2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</article>
+	</div>
 
 	</main>
 
-	<div id="learn more">
-		<button class="Learn More">
-			<p>Learn More</p>
-		</button>
-	</div>
+	
 
 	<footer>
+
+	<div id="social">	
 		
+
+
+		<div id="fb">
+			<a href="http://www.facebook.com/beingzen1"><img src="../images/fb_logo.jpg"></a>
+		</div>
+
+		<div id="twitter">
+			<a href="https://twitter.com/BeingZen2"><img src="../images/twitter_logo.png"></a>
+		</div>
+		
+		<div id="instagram">
+			<a href="https://www.instagram.com/beingzen1/"><img src="../images/insta_logo.png"></a>	
+		</div>	
+
+		<div id="logo">
+			<img src="../images/Being Zen Crop.png">
+		</div>	
+
+	</div	
+
 	</footer>
 
 

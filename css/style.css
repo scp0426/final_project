@@ -2,7 +2,7 @@
      -moz-box-sizing: border-box; /* Firexfox */
      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
      box-sizing: border-box; /* IE */
-     font-family: 'Open Sans', sans-serif;
+    font-family: 'Lora', serif;;
      margin: 0px;
 }
 
@@ -32,11 +32,13 @@
 /*****************HEADER*********************/
 
 header img {
-	width: 11%;
+	width: 25%;
 }
 
 header {
 	background-color: #302F46;
+  /*position: fixed;*/
+  opacity: .9;
 }
 
 header ul {
@@ -52,7 +54,8 @@ nav li {
 header nav {
 	float: right;
 	margin-right: 10%;
-	font-size: 200%;
+  margin-top: 1%;
+	font-size: 210%;
 }
 
 nav a {
@@ -62,43 +65,55 @@ nav a {
 }
 
 nav a:hover {
-	color: grey;
+	color: #FE9A2E;
 }
 
-nav a:visited {
-	color: #B8B299;
-}
+/*nav a:visited {
+	color: blue;
+}*/
+
+
 
 
 /***********END HEADER***********************/
 
 /************CTA Section*********************/
 
-hero {
+/*hero {
 	height: 10%;
 	width: 100%;
-	/*background-color: #B8B298;*/
+	background-color: #B8B298;
 	float: left;
-}
+}*/
 
-hero form {
+/*hero form {
 	margin-left: 50%;
 	margin-top: 10%;
+}*/
+
+.hero{
+  position:relative;
+  height: 661px;
 }
+
+/**********Video Background*****************/
 
 .fullscreen-bg {
-    position: fixed;
-    top: 5%;
+    /*margin-top: 190px;*/
+    position: absolute;
+    top: -10px;
     right: 0;
-    bottom: 10%;
     left: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     z-index: -100;
+    height: 237px;
+    opacity: .7;
 }
 
-.fullscreen-bg__video {
-    position: absolute;
-    top: 0;
+.fullscreen-bg video {
+    /*position: absolute;*/
+    margin-top: 0px;
+   /* top: 200px;*/
     left: 0;
     width: 100%;
     height: 100%;
@@ -106,17 +121,221 @@ hero form {
 
 
 @media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
+  .fullscreen-bg video {
     height: 300%;
     top: -100%;
   }
 }
 
 @media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
+  .fullscreen-bg video {
     width: 300%;
     left: -100%;
   }
 }
 
+/************FORM************************/
 
+ form {
+  width: 40%;
+  float: right;
+  margin-right: 13%;
+  margin-top: 7%;
+ background-color: 
+ border-radius: 5px;
+}
+
+
+.cta_header {
+  font-size: 41px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+
+.cta_description {
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+  margin: -2px 0 45px;
+}
+
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+
+.button {
+  height: 60px;
+  border: none;
+}
+
+  
+#email {
+  width: 75%;
+  background: #FDFCFB;
+  font-family: inherit;
+  color: #737373;
+  letter-spacing: 1px;
+  text-indent: 5%;
+  border-radius: 5px 0 0 5px;
+}
+
+
+#submit {
+  width: 25%;
+  height: 62px;
+  background: #FE9A2E;
+  font-family: inherit;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background .3s ease-in-out;
+}
+  
+
+#submit:hover {
+  background: #FF8000;
+}
+  
+
+input:focus {
+  outline: none;
+  outline: 2px solid grey;
+  /*box-shadow: 0 0 2px #E86C8D;*/
+}
+
+
+
+/*POSTS*/
+
+main {
+  width: 100%;
+  /*padding: 2% 12%;*/
+}
+
+.post {
+  text-align: center;
+}
+
+.post h2 {
+  font-size: 244%;
+}
+
+.post p {
+  font-size: 200%;
+  padding: 0 4% 0 4%;
+}
+
+#post1 {
+  background-color: #302F46;
+  color: white;
+  padding-top: .5%;
+}
+
+#learn_more {
+  background-color: #FE9A2E;
+  width: 22%;
+  height: 77px;
+  border-radius: 21px;
+  color: white;
+  box-shadow: 6px 8px 23px #302F46;
+  /*padding-bottom: 8%;*/
+  font-size: 184%;
+}
+
+#learn_more:hover {
+  background-color: #FF8000;
+}
+
+#learn_more_button {
+  padding: 1% 0 6%;
+}
+
+.show_more {
+  display: none;
+}
+
+/*************FOOTER*******************/
+
+footer {
+  background-color: #302F46;
+}
+
+#social {
+  margin-left: 35%;
+  padding: 1%;
+}
+
+#fb img {
+    width: 84px;
+    float: left;
+    margin-right: 4%;
+    margin-top: 1%;
+}
+
+#fb {
+  padding: 1%;
+}
+
+#twitter img {
+  width: 100px;
+  float: left;
+  margin-right: 3%;
+}
+
+
+#instagram img {
+  width: 86px;
+  margin-right: 3%;
+}
+
+#logo img {
+  width: 30%;
+}
+
+#logo {
+  padding: 2%;
+  margin-left: 5%;
+}
+
+
+/*MEDIA*/
+
+@media only screen and (max-width: 800px) {
+
+
+  header nav {
+    display: none;
+    
+  }
+
+  .fullscreen-bg {
+    display: none;
+  }
+
+  .hero {
+    background-color: #302F46;
+  }
+
+  form {
+    width: 85%;
+    font-size: 10px;
+    color: white;
+  }
+
+  footer #logo {
+    display: none;
+
+  }
+
+  footer #social {
+    width: 100%;
+    margin-left: 10%;
+  }

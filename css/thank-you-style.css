@@ -1,0 +1,38 @@
+* {
+	/*background-color: #302F46;*/
+}
+
+header nav {
+	color: ;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	padding-top: 3%;
+	/*margin-top: 5%;*/
+	
+}
+
+main {
+	/*margin-top: 5%;*/
+	background-color: #302F46;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+footer h2 {
+	color: #B8B298;
+	margin-left: 1%;
+	font-size: 30px;
+}
+
+footer #logo {
+	width: 100%;
+	margin-left: 33%;
+}
+
+footer #social {
+	margin-left: 33%;
+}
